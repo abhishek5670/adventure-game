@@ -2,7 +2,7 @@ import time
 import random
 
 
-weapon = random.choice([" Mjölnir hammer", "vibranium shield"])
+weapon = random.choice([" Mjolnir hammer", "vibranium shield"])
 items = []
 stone = []
 magic = ["reality stone"]
@@ -39,7 +39,7 @@ def intro():        #DESCRIBES THE INTRODUCTION OF STORY
     print_pause("who want to become LEGEND")
     print_pause("but you have only a dagger")
     print_pause(" which is not affect the loki\n")
-    print_pause(f"Loki is only kill by a {weapon}")
+    print_pause("Loki is only kill by a "+weapon)
     print_pause(" that is  hide by  Reality stone")
     print_pause("which is hide in asgardian secure house:Oregan")
     print_pause("reality stone is used to change")
@@ -49,13 +49,13 @@ def intro():        #DESCRIBES THE INTRODUCTION OF STORY
 
 def asgard(): # TELL US ABOUT ASGARD 
     # when player thinks what he do next
-    print_pause(f"Enter 1 to enter in the palace.")
+    print_pause("Enter 1 to enter in the palace.")
     print_pause("Enter 2 Find the reality stone.")
     print_pause("what would you like to do?")
     response = (input("(please enter 1 or 2).\n"))
     if magic in stone:
         print_pause("finally you got stone and use it to see reality")
-        print_pause(f"you use it and take {weapon}")
+        print_pause("you use it and take "+weapon)
         items.append(weapon)
     else:
         print("you have not reality stone")
@@ -77,15 +77,15 @@ def palace(): #TELLS US ABOUT PALACE
 #CONDITIONAL STATEMENTS USE FOR CHOOSING WEAPON
     if weapon in items:
         print_pause("As the loki moves to attack, ")
-        print_pause(f"you unsheath your new {weapon}.")
-        print_pause(f"The {weapon} with full of thunder "
+        print_pause("you unsheath your new"+weapon+" .")
+        print_pause("The "+weapon+" with full of thunder "
                     "you and your weapon is ready to attack.")
         print_pause("But the loki takes one look at "
                     "your new weapon and surprised")
         print_pause("And loki use unlish power and attack on you"
                     "suddenly you use reality and change the reality")
         print_pause("and failed the power of loki")
-        print_pause(f"and then he use his {weapon} and defeat him")
+        print_pause("and then he use his "+weapon+" and defeat him")
         restart_game()
 
     elif weapon not in items:
